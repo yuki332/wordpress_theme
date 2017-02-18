@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Template</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!-- <script src="js/jquery.flexslider.js"></script> -->
+	<script>
+		$(document).ready(function(){
+			$(".nav-button").click(function () {
+			$(".nav-button,.primary-nav").toggleClass("open");
+			});
+		});
+		// $(window).load(function() {
+		//   $('.flexslider').flexslider({
+		//     animation: "slide"
+		//   });
+		// });
+	</script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="sns show--lg">
+			<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+			<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+			<i class="fa fa-tumblr-square fa-2x" aria-hidden="true"></i>
+		</div>
+		<nav>
+			<button class="nav-button show--sm"></button>
+			<div class="logo hidden--sm">
+				<img class="logo__img" src="https://dummyimage.com/50x50/000/fff" alt="">
+				<p>slogan</p>
+			</div>
+			
+			<ul class="primary-nav nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Gallary</a>
+					<ul>
+						<li><a href="#">Pictures</a></li>
+						<li><a href="#">Videos</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Works</a></li>
+			</ul>
+			<div class="nav--25">
+				<input class="nav__search hidden--sm" type="text" placeholder="Search">
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<input class="nav__item nav__search show--sm" type="text" placeholder="Search">
+		<section class="mainvisual">
+			<p class="mainvisual__disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, neque, ex! Excepturi corporis, ex impedit quia animi ab temporibus.</p>
+			<a href="#" class="mainvisual__btn hidden--sm">Start Here</a>
+		</section>
+		<section>
+			<h1 class="label">Works</h1>
+			<div class="row">
+				<article class="panel">
+					<div class="panel__title">Human</div>
+					<div class="panel__img--circle">
+						<img src="/img/human.jpg" alt="">
+					</div>
+					<div class="panel__disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam doloribus voluptatum animi.</div>
+					<a class="panel__btn" href="#">Read More</a>
+				</article>
+				<article class="panel">
+					<div class="panel__title">Animals</div>
+					<div class="panel__img--circle">
+						<img src="/img/lion.jpg" alt="">
+					</div>
+					<div class="panel__disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam doloribus voluptatum animi.</div>
+					<a class="panel__btn" href="#">Read More</a>
+				</article>
+				<article class="panel">
+					<div class="panel__title">Space</div>
+					<div class="panel__img--circle">
+						<img src="/img/earth.jpg" alt="">
+					</div>
+					<div class="panel__disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam doloribus voluptatum animi.</div>
+					<a class="panel__btn" href="#">Read More</a>
+				</article>
+			</div>
+		</section>
+		<section class="row row--mdsp font--md">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci itaque aliquid veritatis rerum totam eaque quo dolor ex, ullam saepe accusamus nam sequi cupiditate, officiis velit modi quam nisi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci itaque aliquid veritatis rerum totam eaque quo dolor ex, ullam saepe accusamus nam sequi cupiditate, officiis velit modi quam nisi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci itaque aliquid veritatis rerum totam eaque quo dolor ex, ullam saepe accusamus nam sequi cupiditate, officiis velit modi quam nisi!
+			</p>
+		</section>
+		<section class="row row--mdsp row--sparound">
+			<div class="col--50">
+				<form action="FormToEmail.php" method="POST">
+					<div class="form__row">
+						<label class="form__label" for="name">Name</label>
+						<div class="form__field">
+							<input type="text" name="name" placeholder="Full Name" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<label class="form__label" for="age">Age</label>
+						<div class="form__field">
+							<input type="number" name="age" placeholder="Your Age" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<label class="form__label" for="phone">Phone</label>
+						<div class="form__field">
+							<input type="tel" name="phone" placeholder="Your Phone Number" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<label class="form__label" for="email">Email</label>
+						<div class="form__field">
+							<input type="email" name="email" placeholder="Your Email" required>
+						</div>
+					</div>
+					<div class="form__row">	
+						<label class="form__label" for="comments">Comments</label>
+						<div class="form__field">
+							<textarea name="comments" cols="35" rows="10"></textarea>
+						</div>
+					</div>
+					<div class="form--btn">
+						<input type="submit" class="form__btn">
+					</div>
+				</form>
+			</div>
+			<div class="col--50">
+				<img src="https://dummyimage.com/600x400/000/fff" alt="test" class="hidden--sm">
+			</div>
+		</section>
+		<section class="row--primary row--mdsp row--nobtm">
+			<p class="font--lg">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa possimus vitae, officia sunt repudiandae, enim dolore dolores aliquid ipsum commodi.
+			</p>
+		</section>
+		<section class="row row--nobtm show--lg">
+			<img src="/img/mountain.jpeg" alt="">
+		</section>
+	</div>
+	<footer>
+		<div class="sitemap">
+			<div class="sitemap__col">
+				<h4>Global Template</h4>
+				<p>This is template for wordpress. It is created in class assignments of Utah Valley University DGM3740.</p>
+			</div>
+			<ul class="sitemap__col">
+				<h4>LINKS</h4>
+				<li class="sitemap__item"><a href="#">HOME</a></li>
+				<li class="sitemap__item"><a href="#">ABOUT</a></li>
+				<li class="sitemap__item"><a href="#">GARALLY</a></li>
+				<li class="sitemap__item"><a href="#">WORKS</a></li>
+				<li class="sitemap__item"><a href="#">Client Login</a></li>
+			</ul>
+			<div class="sitemap__col">
+				<h4>CONTACT</h4>
+				<p class="sitemap__item"><a href="tel:8013333333">801-333-3333</a></p>
+				<p class="sitemap__item">global@sample.com</p>
+				<address class="sitemap__item">123 S 456 E Salt Lake City, Utah</address>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright &copy; Global Template</p>
+	</footer>
+</body>
+</html>

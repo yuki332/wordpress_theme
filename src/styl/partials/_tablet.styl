@@ -1,0 +1,88 @@
+@media only screen and (min-width: 570px) and (max-width: 1069px)
+	.hidden--sm
+		display block !important
+	.show
+		&--lg
+			display none !important
+		&--sm
+			display none !important
+	nav
+		display flex
+		justify-content flex-end
+		margin 1em
+	.nav
+		display flex
+		// justify-content space-around
+		// padding 1em
+		list-style none
+		position relative
+		& ul
+			list-style none
+		& li
+			margin 1em 1.5em
+			position relative
+			&:hover > ul
+				display block
+		& ul
+			display none
+			position absolute
+			left 0
+			z-index 99999
+			background white
+		& .current-menu-item a
+			// this should be replaced to '.current-menu-item a'
+			padding-bottom 5px
+			border-bottom 3px solid lighter
+		&__search
+			width auto
+			margin 1em 0
+			border-bottom 1px light-gray solid
+	.logo
+		display flex
+		align-items baseline
+		position absolute
+		left 2em
+		& > img
+			width auto
+			margin-right 1em
+	.row
+		margin-bottom 5em
+		display flex
+		justify-content space-around
+		flex-wrap wrap
+		&--center
+			justify-content center
+	.panel
+		width 40%
+	.multicol
+		-webkit-column-count 2
+		-moz-column-count 2
+		column-count 2
+
+		-webkit-column-gap 2em
+		-moz-column-gap 2em
+		column-gap 2em
+
+		-webkit-column-rule 1px outset #4e4e4e
+		-moz-column-rule 1px outset #4e4e4e
+		column-rule 1px outset #4e4e4e
+	.photo--circle
+		width 31%
+	.form
+		&__row
+			display flex
+		&__label
+			width 25%
+		&__field
+			width 75%
+		&--btn
+			text-align right
+	.col--50
+		width 100%
+	.location
+		width 75%
+		margin-right auto
+		margin-left auto
+	.map
+		& iframe
+			height 450px
